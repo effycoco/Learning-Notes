@@ -26,7 +26,7 @@ git commit -m "some message" -m "more detail message"
 ```
 `git add . ` to track all files listed in git status(staging area)
 
-`git rm --cashed r . remove everything in the staging area
+`git rm --cashed r .` remove everything in the staging area
 
 ## SSH key 
 [Reference](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
@@ -64,3 +64,8 @@ in the comman line, run `ssh-add -K ~/.ssh/id_rsa` to add ssh private key to ssh
 `git diff <filename.type>` to see the difference of this file between the working directory and local repository
 
 `git checkout <filename.type>` to restore this file back to the last version that was commited in local repository
+
+## gitignore
+.gitignore should be edited before `git add .`
+
+if accidently added all the files, use `git rm --cashed r .` remove everything in the staging area
